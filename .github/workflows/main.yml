@@ -79,3 +79,7 @@ jobs:
           name: webapp # optional
           # Destination path
           path: ${{ github.workspace }} # optional
+          
+          
+      - name: LS
+        run: ls -R
