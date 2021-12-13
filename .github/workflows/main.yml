@@ -42,6 +42,8 @@ jobs:
       - name: Restore packages
         run: dotnet restore
       
+      - name: Dotnet Build
+        run: dotnet build --configuraion Release --no-restore
       
       
 
