@@ -47,6 +47,12 @@ jobs:
         
       - name: Dotnet Test
         run: dotnet test --no-build
+        
+      - name: Dotnet Publish
+        run: dotnet publish  --configuraion Release --no-build --output ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        
+      - name: LS
+        run: ls -R
              
       
       
